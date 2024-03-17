@@ -6,6 +6,5 @@
         public string? NomeProduto { get; set; }
         public bool TipoProduto { get; set; }
         public int QntProduto { get; set; }
-
     }
 }
