@@ -3,12 +3,13 @@
 namespace Estoque.Api.Controllers
 {
     [ApiController]
-    [Route("estoque")]
-
-    public class  : ControllerBase
+    [Route("listar-produto")]
+    public class ExemploController : ControllerBase
     {
-    [HttpPost]
-    [ProducesResponseType(typeof(ListarProdutosResponse[], (int)ResponseStatus.Ok)]
-
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> Get()
+        {
+            return new string[] { "Dado1", "Dado2", "Dado3" };
+        }
     }
 }
